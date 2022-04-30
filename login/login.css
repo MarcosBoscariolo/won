@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+p, span {
+    font-size: 26px;
+}
+
+span {
+    color: #F231A5;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {    
+    background: #EAEAEA;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    height: 50px; 
+    width: 380px;
+    padding-left: 45px;
+} 
+
+label {
+    position: absolute;
+    left: 15px;
+    bottom: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.column1 {
+    height: 100vh;
+    background-color: rgba(3, 5, 23, 0.85);
+    display: grid;    
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.imageLogin {
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.noOpacity {
+    color: white;    
+    display: grid;
+    opacity: 0.99;
+    margin:  0px 60px;
+}
+
+.content {
+    display: grid;
+    align-content: center;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;   
+}
+
+.footer {
+    display: grid;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    text-align: center;
+    align-content: end;
+}
+
+/* Column 2 */
+.column2 {
+    grid-column: 2;
+    display: grid;
+    gap: 50px;
+}
+
+.signInLogo {
+    display: grid;
+    place-content: end center;
+}
+
+.signIn {
+    margin: 0px;
+    display: grid;
+    align-content: start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.forgotPass {
+    color: black;
+    text-align: right;
+}
+
+.input {    
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.button {
+    display: grid;
+    align-content: center;
+    background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
+    border-radius: 4px;
+    color: #FAFAFA;
+    font-weight: 500px;
+    font-size: 14px;
+    text-align: center;      
+    height: 50px;
+    width: 430px;
+}
+
+.button:hover {
+    background: linear-gradient(178.59deg,  #ec4b8b 102.86%, #FF5F5F -14.51%);
+}
+
+.notAccount {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.notAccount-signUp {
+    color: #35BDAC;
+    border-bottom: 1px solid #35BDAC;
+    margin-left: 5px;
+}
+
+.detail {
+    background-color: #35BDAC;
+    position: absolute;
+    height: 31px;
+    width: 7px;
+    left: 170px;
+    top: 22px;
+}
