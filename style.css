@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(0deg, #06092B, #06092B);
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.linkHover:hover {
+    color: #F231A5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px 60px;
+}
+
+.flex-nav-left {
+    grid-column: 1;
+    align-items : center;
+    display: flex;
+    gap: 50px;
+}
+
+.flex-nav-right {
+    align-items : center;
+    display: flex;
+    grid-column: 2;
+    gap: 30px;
+    justify-content: end;
+}
+
+.button-signIn {
+    background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
+    border-radius: 4px;
+    display: grid;
+    padding: 10px 25px;
+}
