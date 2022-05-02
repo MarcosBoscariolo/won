@@ -1,9 +1,27 @@
 body {
-    
-    background:  linear-gradient( -110grad, red, green, yellow, blue );
-
+    background-color: #FAFAFA;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+}
+
+body::before { /* Avaliar o melhor caso de uso body ou footer
+                  https://www.youtube.com/watch?v=dDtJPv7DlDU => Transform: Skew()*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background-color: #06092B;
+    transform: skew(0deg, -2deg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform-origin: left;
+    z-index: -1;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 a {
@@ -17,7 +35,7 @@ a {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     margin: 25px 60px;
 }
 
@@ -41,4 +59,47 @@ a {
     border-radius: 4px;
     display: grid;
     padding: 10px 25px;
+}
+
+/* footer */
+footer {    
+    box-sizing: border-box;
+    padding: 100px;
+    width: 100%;
+}
+
+.logo-won-black {
+    width: 107px;
+    height: 32px;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.grid-footer a:hover {
+    color: #343333;
+
+}
+
+.grid-footer h2 {
+    color: #000000;
+}
+
+.grid-footer p, .grid-footer a {  
+    font-size: 14px;  
+    color: #666666;
+}
+
+.followUs a, .links a {
+    display: block;
+}
+
+.copywriting {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 80px;
+    text-align: center;
 }
