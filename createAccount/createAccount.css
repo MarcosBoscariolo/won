@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 20px;
+    display: inline-block;
 }
 
 p, span {
@@ -149,12 +149,10 @@ label {
     margin-left: 5px;
 }
 
-.detail {
+.detail::before {
     background-color: #35BDAC;
-    position: absolute;
+    content: ' ';
+    display: inline-block;
     height: 31px;
-    width: 7px;
-    left: 158px;
-    top: 22px;
-    left: 170px;
-}
+    width: 7px; 
+} 
