@@ -8,7 +8,8 @@ h1 {
 }
 
 h2 {
-    display: inline-block;    
+    display: inline-block;   
+    margin-left: 10px; 
 }
 
 p, span {
@@ -154,10 +155,13 @@ label {
     margin-left: 5px;
 }
 
-.detail::before {
+#detail::before {
     background-color: #35BDAC;
-    content: ' ';
+    content: "";
     display: inline-block;
+    position: absolute;
+    left: 168px;
+    top: 22px;
     height: 31px;
     width: 7px; 
 } 

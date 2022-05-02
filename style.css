@@ -89,12 +89,22 @@ footer {
 }
 
 .grid-footer p, .grid-footer a {  
-    font-size: 14px;  
     color: #666666;
+    font-size: 14px;
+    margin: 1px;  
 }
 
 .followUs a, .links a {
     display: block;
+}
+
+h2::after {
+    background: #3CD3C1;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 22px;
+    position: absolute;
 }
 
 .copywriting {
