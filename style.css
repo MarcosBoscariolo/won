@@ -11,20 +11,20 @@ body {
     margin: 0px;
 }
 
-body::before { /* Avaliar o melhor caso de uso body ou footer
+ body::before { /* Avaliar o melhor caso de uso body ou footer
                   https://www.youtube.com/watch?v=dDtJPv7DlDU => Transform: Skew()*/
     content: "";
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 47%;
     background-color: #06092B;
-    transform: skew(0deg, 2deg);
+    transform: skew(0deg, 3deg);
     position: absolute;
-    top: 0px;
+    top: -25px;
     left: 0px;
     transform-origin: right;
     z-index: -1;
-}
+} 
 
 h1, h2, p {
     margin: 0px;
@@ -71,27 +71,59 @@ a {
 
 /* article */
 /* Vídeo de como fazer o texto por cima da imagem: https://www.youtube.com/watch?v=66SY-HpgS_0 */
+.flex-content {
+    display: flex;
+    place-content: center;
+}
+
+.bestselling {
+    color: #FAFAFA;
+}
+
+.radio-carrosel-intro {
+    padding: 250px 1px 250px 1px;
+    display: grid;
+}
+
+.radio-carrosel-intro input {
+    appearance: none;
+    background-color: #D3D3D3;
+    border: none; 
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 11px;
+    width: 11px;
+}
+
+.radio-carrosel-intro input:checked {
+    background-color: #F231A5;
+    border: none;
+} 
+
 .intro {
-    margin: auto;
+    margin: auto 100px;
+    max-width: 1043px;
     height: 585px;
-    max-width: 1050px;
     position: relative;
 }
 
 .intro img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .intro-content {
     display: grid;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     bottom: 0px;
     color: #FAFAFA;
     gap: 5px;
     padding: 0px 50px;
     position: absolute;
     height: 220px;
-    width: 90%;
+    width: 100%;
 }
 
 .intro-content h2 {
@@ -122,18 +154,20 @@ a {
     height: 3rem;
 }
 
+
 /* section */
 .section-news {
     display: grid;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    max-width: 1050px;
+    max-width: 1043px;
     gap: 20px;
-
 }
 
 .news {
+    font-size: 28px;
+    font-weight: 600;
     margin-left: 15px;
 }
 
@@ -142,8 +176,8 @@ a {
     margin-left: -15px;
     content: "";
     display: block;
-    height: 25px;
-    width: 8px;
+    height: 30px;
+    width: 7px;
     top: 15%;
     position: absolute;
 }
