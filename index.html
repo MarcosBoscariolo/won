@@ -10,26 +10,94 @@
     <title>Won Games</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="grid">
-            <div class="flex-nav-left">
-                <img src="assets/logos/won-white.svg" alt="Logo Won">
-                <a class="linkHover" href="#">Home</a>
-                <a class="linkHover" href="#">Store</a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-grid">
+                <div class="flex-nav-left">
+                    <img src="assets/logos/won-white.svg" alt="Logo Won">
+                    <a class="linkHover" href="#">Home</a>
+                    <a class="linkHover" href="#">Store</a>
+                </div>
+                <div class="flex-nav-right">
+                    <img class="search" src="assets/icons/home/search.svg" alt="">
+                    <img src="assets/icons/home/shopping_cart.svg" alt="">
+                    <a class="button-signIn" href="#">Sign in</a>
+                </div>
             </div>
-            <div class="flex-nav-right">
-                <img class="search" src="assets/icons/home/search.svg" alt="">
-                <img src="assets/icons/home/shopping_cart.svg" alt="">
-                <a class="button-signIn" href="#">Sign in</a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section>
-        <h1>Lorem ispum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ea voluptatibus obcaecati. Odio deleniti, officiis autem ratione reprehenderit harum ipsa nemo ut dolores, iste eveniet alias facilis repellendus? Necessitatibus, non!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ea voluptatibus obcaecati. Odio deleniti, officiis autem ratione reprehenderit harum ipsa nemo ut dolores, iste eveniet alias facilis repellendus? Necessitatibus, non!</p>
-    </section>
+    <main>
+        <article>
+                <div class="flex-content">
+                    <div class="intro">
+                        <span class="bestselling">Bestselling</span>
+                        <img src="assets/images/game-crashlands.png" alt="">
+                        <div class="intro-content">
+                            <h2>Defy death</h2>
+                            <p>Play the new <span>CrashLands</span> season</p>
+                            <button type="button" class="button-buy" name="buy">Buy now</button>
+                        </div>                        
+                    </div>
+                    <div class="radio-carrosel-intro">
+                        <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro"></input>
+                        <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro"></input>
+                        <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro"></input>
+                        <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro"></input>
+                    </div>
+                </div>
+        </article>
+
+        <section>
+            <div class="section-news">
+                <h1 class="news">News</h1>
+                <ul class="news-ul">
+                    <li class="news-list">
+                        <img class="news-list-image" src="assets/images/game-populationzero.png" alt="">
+                        <div class="grid-content-list">
+                            <span class="game-name">Population Zero</span>
+                            <div class="flex-content-list">
+                                <img class="favorite" src="assets/icons/home/favorite_border.svg" alt="">
+                            </div>
+                            <span class="game-producer">Enplex Games</span>                            
+                            <div class="grid-price">
+                                <span class="price">$215,00</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="news-list">
+                        <img class="news-list-image" src="assets/images/game-projectwinter.png" alt="">                        
+                        <div class="grid-content-list">
+                            <span class="game-name">Project Winter</span>
+                            <div class="flex-content-list">
+                                <img class="favorite" src="assets/icons/home/favorite_border.svg" alt="">
+                            </div>
+                            <span class="game-producer">Other Ocean</span>                            
+                            <div class="grid-price">
+                                <span class="price">$215,00</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-list">
+                        <img class="news-list-image" src="assets/images/game-borderlands.png" alt="">
+                        <div class="grid-content-list">
+                            <span class="game-name">Borderlands 3</span>
+                            <div class="flex-content-list">
+                                <img class="favorite" src="assets/icons/home/favorite_border.svg" alt="">
+                            </div>
+                            <span class="game-producer">Gearbox Software</span>                            
+                            <div class="grid-price">
+                                <span class="price">$215,00</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
     <footer>
         <img class="logo-won-black" src="assets/logos/won-black.svg" alt="Logo on">
         <div class="grid-footer">

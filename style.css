@@ -1,27 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
 body {
-    background-color: #FAFAFA;
+    background-color: #F2F2F2;;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
 
-body::before { /* Avaliar o melhor caso de uso body ou footer
+ body::before { /* Avaliar o melhor caso de uso body ou footer
                   https://www.youtube.com/watch?v=dDtJPv7DlDU => Transform: Skew()*/
     content: "";
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 47%;
     background-color: #06092B;
-    transform: skew(0deg, -2deg);
+    transform: skew(0deg, 3deg);
     position: absolute;
-    top: 0px;
+    top: -25px;
     left: 0px;
-    transform-origin: left;
+    transform-origin: right;
     z-index: -1;
-}
+} 
 
-h2 {
-    text-transform: uppercase;
-    font-size: 16px;
+h1, h2, p {
+    margin: 0px;
 }
 
 a {
@@ -33,7 +39,7 @@ a {
     color: #F231A5;
 }
 
-.grid {
+.nav-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     margin: 25px 60px;
@@ -59,6 +65,186 @@ a {
     border-radius: 4px;
     display: grid;
     padding: 10px 25px;
+}
+
+/* main */
+
+/* article */
+/* Vídeo de como fazer o texto por cima da imagem: https://www.youtube.com/watch?v=66SY-HpgS_0 */
+.flex-content {
+    display: flex;
+    place-content: center;
+}
+
+.bestselling {
+    color: #FAFAFA;
+}
+
+.radio-carrosel-intro {
+    padding: 250px 1px 250px 1px;
+    display: grid;
+}
+
+.radio-carrosel-intro input {
+    appearance: none;
+    background-color: #D3D3D3;
+    border: none; 
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 11px;
+    width: 11px;
+}
+
+.radio-carrosel-intro input:checked {
+    background-color: #F231A5;
+    border: none;
+} 
+
+.intro {
+    margin: auto 100px;
+    max-width: 1043px;
+    height: 585px;
+    position: relative;
+}
+
+.intro img {
+    max-width: 100%;
+}
+
+.intro-content {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    bottom: 0px;
+    color: #FAFAFA;
+    gap: 5px;
+    padding: 0px 50px;
+    position: absolute;
+    height: 220px;
+    width: 100%;
+}
+
+.intro-content h2 {
+    align-self: end;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.intro-content p, .intro-content span {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.intro-content span {
+    color: #F231A5;
+}
+
+.button-buy {
+    background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
+    border: none;
+    border-radius: 4px;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+}
+
+
+/* section */
+.section-news {
+    display: grid;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 1043px;
+    gap: 20px;
+}
+
+.news {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.news::before {
+    background: #3CD3C1;
+    margin-left: -15px;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 7px;
+    top: 15%;
+    position: absolute;
+}
+
+.news-ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    margin: 0px;
+}
+
+.news-list-image{
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.news-list {
+    max-width: 293px;
+    max-height: 137px;
+}
+
+.grid-content-list {
+    background-color: #FAFAFA;
+    border-radius: 0px 0px 4px 4px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 15px;
+}
+
+.flex-content-list {
+    display: grid;
+    justify-content: end;
+    grid-row: 1;
+    grid-column: 2;    
+}
+
+.flex-content-list span {
+    display: block;
+}
+
+.grid-price{
+    display: grid;
+    place-content: end;
+}
+
+.price {
+    background-color: #3CD3C1;
+    border-radius: 2px;
+    color: white;
+    display: grid;
+    margin-top: 3px;
+    place-content: center;
+    text-align: center;
+    height: 25px;
+    width: 75px;
+}
+
+.game-name {
+    color: #030517;
+    font-size: 16px;
+}
+
+.game-producer {
+    color: #BBBBBB;
+    font-size: 12px;
 }
 
 /* footer */
@@ -89,12 +275,31 @@ footer {
 }
 
 .grid-footer p, .grid-footer a {  
-    font-size: 14px;  
     color: #666666;
+    font-size: 14px;
+    margin: 1px;  
 }
 
 .followUs a, .links a {
     display: block;
+}
+
+.grid-footer h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.grid-footer h2::after {
+    background: #3CD3C1;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 22px;
+    position: absolute;
+}
+
+.grid-footer h2 {
+    margin-bottom: 15px;
 }
 
 .copywriting {
