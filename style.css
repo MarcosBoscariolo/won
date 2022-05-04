@@ -77,7 +77,28 @@ a {
 }
 
 .bestselling {
+    background-color: #3CD3C1;
     color: #FAFAFA;
+    font-size: 14px;
+    margin: 50px 0px 0px 960px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.bestselling::after {
+    content: '';
+    /*background-color: red;   */
+    /* background: #3CD3C1; */
+    background:linear-gradient(to bottom right,#3CD3C1 50%,#06092B 50%);
+    opacity: 0.7;
+    display: inline-block;
+    top: 100%;
+    left: 85%;
+    width: 15%;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
 }
 
 .radio-carrosel-intro {
@@ -116,6 +137,7 @@ a {
 .intro-content {
     display: grid;
     background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
     border-radius: 5px;
     bottom: 0px;
     color: #FAFAFA;
