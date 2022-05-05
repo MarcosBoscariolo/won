@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F2F2F2;;
+    background-color: #F2F2F2;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
@@ -16,7 +16,7 @@ body {
     content: "";
     display: block;
     width: 100%;
-    height: 26%;
+    height: 16%;
     background-color: #06092B;
     transform: skew(0deg, 2deg);
     position: absolute;
@@ -335,6 +335,16 @@ a {
     height: 310px;
 }
 
+.banner-free-games {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/background-free-games.png') no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 310px;
+
+}
+
 .banner img {
     max-height: 100%;
 }
@@ -370,6 +380,56 @@ a {
 
 #upcoming-space {
     margin-top: 30px;
+}
+
+.discount {
+    background-color: #FF5F5F;
+    color: #FAFAFA;
+    font-size: 10px;
+    margin: 15px 0px 0px 235px;
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.discount::after{
+    border-top: 6px solid #FF5F5F; 
+    border-right: 12px solid transparent; 
+    content: '';
+    margin-left: 2.2px;
+    opacity: 0.5;
+    position: absolute;
+    top: 25px;
+    width: 0; 
+    height: 0; 
+    z-index: 1;
+ }
+
+ .grid-discount-list {
+    background-color: #FAFAFA;
+    border-radius: 0px 0px 4px 4px;
+    display: grid;
+    grid-template-columns: repeat(auto, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 15px;
+}
+
+.grid-discount-desc {
+    display: grid;
+}
+ 
+del {
+    color: #C7C7C7;
+    font-size: 14px;
+}
+
+.freegames-arrow-back {
+    top: 144px;
+    display: flex;
+    margin-left: 10%;
 }
 
 /* footer */
