@@ -84,7 +84,6 @@ main {
 .grid-section {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    /* place-content: space-between; */
 }
 
 /* Customizando checkbox & radio => https://www.youtube.com/watch?v=cksgCkee2uY */
@@ -178,6 +177,10 @@ main {
     border-color: #F231A5;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 .grid-list-games {
     display: grid;
     place-content: start;
@@ -207,7 +210,6 @@ main {
 .section-news-carousel {
     margin: auto;
     margin-top: 20px;
-    /* max-width: 1043px; */
 }
 
 .news-ul {
@@ -266,4 +268,84 @@ main {
 .game-producer {
     color: #BBBBBB;
     font-size: 12px;
+}
+
+.show-more {
+    color: #FAFAFA;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 8px;
+    margin-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 940px;
+}
+
+/* footer */
+footer {  
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.footer-content {    
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.logo-won-black {
+    width: 107px;
+    height: 32px;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.grid-footer a:hover {
+    color: #343333;
+
+}
+
+.grid-footer h2 {
+    color: #000000;
+}
+
+.grid-footer p, .grid-footer a {  
+    color: #666666;
+    font-size: 14px;
+    margin: 1px;  
+}
+
+.followUs a, .links a {
+    display: block;
+}
+
+.grid-footer h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.grid-footer h2::after {
+    background: #3CD3C1;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 22px;
+    position: absolute;
+}
+
+.grid-footer h2 {
+    margin-bottom: 15px;
+}
+
+.copywriting {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
 }
