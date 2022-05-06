@@ -83,7 +83,7 @@ main {
 
 .grid-section {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
 }
 
 /* Customizando checkbox & radio => https://www.youtube.com/watch?v=cksgCkee2uY */
@@ -103,17 +103,30 @@ main {
     
 }
 
-/* .filter-price {
-    display: grid;
-    gap: 5px;
-    grid-column: 1;
-} */
-
 .filter h3 {
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 18px;
+}
+
+.filter h3::after {
+    background-color: #3CD3C1;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    position: absolute;
+}
+
+.filter-price::after, .filter-sort-by::after, .filter-system::after {
+    background-color: #2B2C34;
+    content: '';
+    display: block;
+    width: 220px;
+    height: 1px;
+    position: absolute;
+    bottom: -30px;
 }
 
 .container-checkbox input, .container-radio input{
@@ -157,10 +170,182 @@ main {
     vertical-align: middle;
     margin-right: 8px;
     margin-bottom: 2px;
-  }
+}
   
-  .container-radio input:checked + label:before {
+.container-radio input:checked + label:before {
     background: radial-gradient(#F231A5 0%, #F231A5 40%, transparent 50%, transparent);
     border-color: #F231A5;
-  }
+}
 
+section {
+    margin-bottom: 40px;
+}
+
+.grid-list-games {
+    display: grid;
+    place-content: start;
+    gap: 100px;
+}
+
+/* search for */
+.search-input-container {
+    background: #2E2F42;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+
+    height: 40px; 
+    width: 293px;
+    padding-left: 15px;
+}
+
+.label-search-input {
+    position: absolute;
+    top: 60px;
+    left: 265px;
+}
+
+.section-news-carousel {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.news-ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.news-list-image{
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.news-list {
+    max-width: 293px;
+    max-height: 137px;
+}
+
+.grid-content-list {
+    background-color: #FAFAFA;
+    border-radius: 0px 0px 4px 4px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 15px;
+}
+
+.flex-content-list {
+    display: grid;
+    justify-content: end;
+    grid-row: 1;
+    grid-column: 2;    
+}
+
+.grid-price{
+    display: flex;
+    gap: 5px;
+    margin-top: 3px;
+    place-content: end;
+}
+
+.price {
+    background-color: #3CD3C1;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    height: 25px;
+    width: 75px;
+}
+
+.game-name {
+    color: #030517;
+    font-size: 16px;
+}
+
+.game-producer {
+    color: #BBBBBB;
+    font-size: 12px;
+}
+
+.show-more {
+    color: #FAFAFA;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 8px;
+    margin-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 940px;
+}
+
+/* footer */
+footer {  
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.footer-content {    
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.logo-won-black {
+    width: 107px;
+    height: 32px;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.grid-footer a:hover {
+    color: #343333;
+
+}
+
+.grid-footer h2 {
+    color: #000000;
+}
+
+.grid-footer p, .grid-footer a {  
+    color: #666666;
+    font-size: 14px;
+    margin: 1px;  
+}
+
+.followUs a, .links a {
+    display: block;
+}
+
+.grid-footer h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.grid-footer h2::after {
+    background: #3CD3C1;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 22px;
+    position: absolute;
+}
+
+.grid-footer h2 {
+    margin-bottom: 15px;
+}
+
+.copywriting {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+}
