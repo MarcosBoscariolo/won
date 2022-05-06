@@ -1,0 +1,72 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-color: #06092B;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+/* nav */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    margin: 25px 60px;
+}
+
+.flex-nav-left {
+    align-items : center;
+    display: flex;
+    gap: 50px;
+    grid-column: 1;
+}
+
+.link::after {
+    background: #F231A5;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 3px;
+}
+
+.flex-nav-right {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    grid-column: 2;
+    justify-content: end;
+}
+
+.flex-nav-right button {
+    align-items: center;
+    border: none;
+    background: none;
+    color: #FAFAFA;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.shop-car::before {
+    background: #3CD3C1;
+    clip-path: circle();
+    color: #FAFAFA;
+    content: '12';
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 1;
+}
