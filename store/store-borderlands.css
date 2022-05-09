@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #06092BFF;
+    max-width: 1440px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/* header */
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.background-borderlands {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../assets/images/background-borderlands.png') no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 70%);
+    width: 100%;
+    height: 650px;
+}
+
+/* nav */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    padding: 50px 60px;
+    /* margin: 25px 60px; */
+    /* margin: auto; */
+}
+
+.flex-nav-left {
+    align-items : center;
+    display: flex;
+    gap: 50px;
+    grid-column: 1;
+}
+
+.link::after {
+    background: #F231A5;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 3px;
+}
+
+.flex-nav-right {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    grid-column: 2;
+    justify-content: end;
+}
+
+.flex-nav-right button {
+    align-items: center;
+    border: none;
+    background: none;
+    color: #FAFAFA;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.shop-car::before {
+    background: #3CD3C1;
+    clip-path: circle();
+    color: #FAFAFA;
+    content: '12';
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 1;
+}
+
+.grid-info-game {
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding: 40px;
+    position: absolute;
+    top: 370px;
+    left: 88px;
+    width: 1250px;
+    height: 262px;
+}
+
+.grid-info-game h1 {
+    grid-row: 1;
+}
+
+.grid-info-game h1::after {
+    content: '';
+    display: block;
+    background-color: #F231A5;
+    width: 50px;
+    height: 4px;
+    position: absolute;
+
+}
+
+.grid-info-game p {
+    color: #828282;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 800px;
+}
+
+.grid-info-game-price {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    grid-row: 1;
+}
+
+.price {
+    background-color: #3CD3C1;
+    border-radius: 2px;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 6px 18px;
+}
+
+.flex-row3-info-game {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.wishlist {
+    color: #F231A5;
+    display: flex;
+    gap: 10px;
+}
+
+.flex-row3-info-game img {
+    vertical-align: middle;
+}
+
+.flex-row3-info-game button {
+    background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
+    border-radius: 4px;
+    border: none;
+    color: #FAFAFA;
+    width: 150px;
+    height: 50px;
+}
+
+.shopcart {
+    width: 21px;
+    height: 21px;    
+}
+
+.grid-row3-info-game {
+    display: grid;
+    align-content: center;
+}
+
+/* carrousel images Borderlands */
+.carousel-image {
+    margin: 96px;
+}
+
+.carousel-image ul {
+    display: flex;
+    gap: 30px;
+}
+
+.carousel-image li {
+    display: inline;
+}
+
+/* section Description */
+.description {
+    max-width: 1256px;
+    margin: auto;
+}
+
+
