@@ -37,8 +37,6 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     padding: 50px 60px;
-    /* margin: 25px 60px; */
-    /* margin: auto; */
 }
 
 .flex-nav-left {
@@ -306,71 +304,189 @@ a {
     border: none;
     opacity: 0.3;
     height: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 } 
 
-
-
-/* 
-.section-content {
-    margin: auto;
-    margin-top: 150px;
-    width: 1440px;
-}
-
-.section-banner {
-    margin: auto;
-    margin-top: 100px;
-    max-width: 1043px;
-}
-
-.section-banner h1 {
+.section-upcoming {
     color: #FAFAFA;
+    display: grid;
+    gap: 40px;
+    max-width: 1256px;
+    margin: auto;
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/background-most-popular.svg') no-repeat;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    height: 310px;
-}
-
-.banner-free-games {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/background-free-games.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    height: 310px;
-
-}
-
-.banner img {
-    max-height: 100%;
 }
 
 .banner-content {
-    color: #FFFFFF;
     display: grid;
-    padding: 60px 30px;
-    gap: 5px;
     align-content: end;
-}
-
-.banner-content h2 {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.banner-content p {
-    font-size: 18px;
-    font-weight: 300;
+    justify-items: end;
+    gap: 20px;
+    padding: 60px 30px;
 }
 
 .banner-content a {
     background: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
     border-radius: 4px;
     text-align: center;
-    padding: 5px 3px;
+    padding: 10px 40px;
 }
-*/
+
+.section-carousel-games {
+    max-width: 1256px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.carousel-games {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.games-list-image{
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+    max-width: 293px;
+    max-height: 137px;
+}
+
+.grid-content-list {
+    background-color: #FAFAFA;
+    border-radius: 0px 0px 4px 4px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 15px;
+}
+
+.flex-content-list {
+    display: grid;
+    justify-content: end;
+    grid-row: 1;
+    grid-column: 2;    
+}
+
+.flex-content-list span {
+    display: block;
+}
+
+.flex-price{
+    display: flex;
+    gap: 5px;
+    margin-top: 3px;
+    place-content: end;
+}
+
+.price {
+    background-color: #3CD3C1;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    padding: 4px 12px;
+}
+.game-name {
+    color: #030517;
+    font-size: 16px;
+}
+
+.game-producer {
+    color: #BBBBBB;
+    font-size: 12px;
+}
+
+.section-arrow-next {
+    top: -150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.section-carousel-games h1 {
+    color: #FAFAFA;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.end-section {
+    margin-bottom: 180px;
+}
+
+/* footer */
+footer {    
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.footer-content {    
+    max-width: 1256px;
+    margin: auto;
+    padding: 40px 60px;
+    padding-bottom: 2px;
+}
+
+.logo-won-black {
+    width: 107px;
+    height: 32px;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.grid-footer a:hover {
+    color: #343333;
+
+}
+
+.grid-footer h2 {
+    color: #000000;
+}
+
+.grid-footer p, .grid-footer a {  
+    color: #666666;
+    font-size: 14px;
+    margin: 1px;  
+}
+
+.followUs a, .links a {
+    display: block;
+}
+
+.grid-footer h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.grid-footer h2::after {
+    background: #3CD3C1;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 22px;
+    position: absolute;
+}
+
+.grid-footer h2 {
+    margin-bottom: 15px;
+}
+
+.copywriting {
+    color: #666666;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 0px;
+}
