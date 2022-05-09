@@ -252,18 +252,18 @@ a {
     padding: 15px;
 }
 
-.flex-content-list {
+.grid-content-info {
     display: grid;
     justify-content: end;
     grid-row: 1;
     grid-column: 2;    
 }
 
-.flex-content-list span {
+.grid-content-info span {
     display: block;
 }
 
-.grid-price{
+.flex-price{
     display: flex;
     gap: 5px;
     margin-top: 3px;
@@ -426,13 +426,14 @@ del {
 footer {    
     box-sizing: border-box;
     padding: 100px;
+    padding-bottom: 0;
     /* padding-bottom: 0; */
     max-width: 1256px;
     margin: auto;
 }
 
 .logo-won-black {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     width: 107px;
     height: 32px;
 }

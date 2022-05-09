@@ -84,6 +84,7 @@ main {
 .grid-section {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    margin: 20px 100px;
 }
 
 /* Customizando checkbox & radio => https://www.youtube.com/watch?v=cksgCkee2uY */
@@ -237,14 +238,14 @@ section {
     padding: 15px;
 }
 
-.flex-content-list {
+.grid-content-info {
     display: grid;
     justify-content: end;
     grid-row: 1;
     grid-column: 2;    
 }
 
-.grid-price{
+.flex-price{
     display: flex;
     gap: 5px;
     margin-top: 3px;
@@ -291,8 +292,8 @@ footer {
 
 .footer-content {    
     max-width: 1440px;
-    margin: auto;
-    padding: 40px 60px;
+    padding: 40px 100px;
+    padding-bottom: 0;
 }
 
 .logo-won-black {
